@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>热门文章带有序号的循环标签 | 风中赏雪</title><meta name="author" content="风中赏雪"><meta name="copyright" content="风中赏雪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="带有序号的的热门文章循环标签，$key &#x3D;&gt;12345678910111213141516171819&#123;php&#125;$order &#x3D; array(&#x27;log_ViewNums&#x27;&#x3D;&gt;&#x27;DESC&#x27;);$where &#x3D; array(array(&#x27;&#x3D;&#x27;,&#x27;log_Status&#x27;,&#x27;0&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="热门文章带有序号的循环标签">
+<meta property="og:url" content="https://jack-feichangkele.github.io/undefined/dc822e.html">
+<meta property="og:site_name" content="风中赏雪">
+<meta property="og:description" content="带有序号的的热门文章循环标签，$key &#x3D;&gt;12345678910111213141516171819&#123;php&#125;$order &#x3D; array(&#x27;log_ViewNums&#x27;&#x3D;&gt;&#x27;DESC&#x27;);$where &#x3D; array(array(&#x27;&#x3D;&#x27;,&#x27;log_Status&#x27;,&#x27;0&amp;#x">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jack-feichangkele.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-11-30T16:00:31.000Z">
+<meta property="article:modified_time" content="2025-11-30T16:08:40.502Z">
+<meta property="article:author" content="风中赏雪">
+<meta property="article:tag" content="热门文章">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jack-feichangkele.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "热门文章带有序号的循环标签",
+  "url": "https://jack-feichangkele.github.io/undefined/dc822e.html",
+  "image": "https://jack-feichangkele.github.io/img/butterfly-icon.png",
+  "datePublished": "2025-11-30T16:00:31.000Z",
+  "dateModified": "2025-11-30T16:08:40.502Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "风中赏雪",
+      "url": "https://jack-feichangkele.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jack-feichangkele.github.io/undefined/dc822e.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":true,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '热门文章带有序号的循环标签',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><div id="web_bg" style="background: [object Object];"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文档</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wordpress/"><i class="fa-fw fas fa-wordpress"></i><span> wordpress</span></a></li><li><a class="site-page child" href="/zblog/"><i class="fa-fw fas fa-zblog"></i><span> zblog</span></a></li><li><a class="site-page child" href="/heji/"><i class="fa-fw fas fa-heji"></i><span> 合集</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">风中赏雪</span></a><a class="nav-page-title" href="/"><span class="site-name">热门文章带有序号的循环标签</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-book"></i><span> 文档</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wordpress/"><i class="fa-fw fas fa-wordpress"></i><span> wordpress</span></a></li><li><a class="site-page child" href="/zblog/"><i class="fa-fw fas fa-zblog"></i><span> zblog</span></a></li><li><a class="site-page child" href="/heji/"><i class="fa-fw fas fa-heji"></i><span> 合集</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">热门文章带有序号的循环标签</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-30T16:00:31.000Z" title="发表于 2025-12-01 00:00:31">2025-12-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-30T16:08:40.502Z" title="更新于 2025-12-01 00:08:40">2025-12-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/zblog/">zblog</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><!-- 文章正文开始 -->
+<h2 id="带有序号的的热门文章循环标签，-key-gt"><a href="#带有序号的的热门文章循环标签，-key-gt" class="headerlink" title="带有序号的的热门文章循环标签，$key =&gt;"></a>带有序号的的热门文章循环标签，$key =&gt;</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;php&#125;</span><br><span class="line"><span class="variable">$order</span> = <span class="keyword">array</span>(<span class="string">&#x27;log_ViewNums&#x27;</span>=&gt;<span class="string">&#x27;DESC&#x27;</span>);</span><br><span class="line"><span class="variable">$where</span> = <span class="keyword">array</span>(<span class="keyword">array</span>(<span class="string">&#x27;=&#x27;</span>,<span class="string">&#x27;log_Status&#x27;</span>,<span class="string">&#x27;0&#x27;</span>));</span><br><span class="line"><span class="variable">$array</span> = <span class="variable">$zbp</span>-&gt;<span class="title function_ invoke__">GetArticleList</span>(<span class="keyword">array</span>(<span class="string">&#x27;*&#x27;</span>),<span class="variable">$where</span>,<span class="variable">$order</span>,<span class="keyword">array</span>(<span class="number">9</span>),<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">&#123;/php&#125;</span><br><span class="line">&#123;<span class="keyword">foreach</span> <span class="variable">$array</span> <span class="keyword">as</span>  <span class="variable">$key</span> =&gt; <span class="variable">$hotlist</span>&#125;</span><br><span class="line">                               &lt;article <span class="class"><span class="keyword">class</span>=&quot;<span class="title">guide</span>-<span class="title">inner</span> <span class="title">top</span>-<span class="title">num</span></span>&#123;<span class="variable">$key</span>+<span class="number">1</span>&#125;<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">                        &lt;div class=&quot;</span>guide-inner-info<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">                            &lt;h4 class=&quot;</span>g-i-top<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">                                &lt;span class=&quot;</span>g-i-cate<span class="string">&quot;&gt;&lt;a href=&quot;</span>&#123;<span class="variable">$hotlist</span>.Category.Url&#125;<span class="string">&quot; target=&quot;</span>_blank<span class="string">&quot;&gt;<span class="subst">&#123;$hotlist.Category.Name&#125;</span>&lt;/a&gt;&lt;/span&gt;</span></span><br><span class="line"><span class="string">                                &lt;span class=&quot;</span>g-i-time<span class="string">&quot;&gt;&lt;i class=&quot;</span>icon font-time<span class="string">&quot;&gt;&lt;/i&gt;<span class="subst">&#123;$hotlist.Time(&#x27;Y-m-d&#x27;)&#125;</span>&lt;/span&gt;</span></span><br><span class="line"><span class="string">                            &lt;/h4&gt;</span></span><br><span class="line"><span class="string">                            &lt;h5&gt;</span></span><br><span class="line"><span class="string">                                &lt;a href=&quot;</span>&#123;<span class="variable">$hotlist</span>.Url&#125;<span class="string">&quot; target=&quot;</span>_self<span class="string">&quot;&gt;<span class="subst">&#123;$hotlist.Title&#125;</span>&lt;/a&gt;</span></span><br><span class="line"><span class="string">                            &lt;/h5&gt;</span></span><br><span class="line"><span class="string">                           &lt;p&gt; <span class="subst">&#123;$hotlist.Intro&#125;</span>&lt;/p&gt;</span></span><br><span class="line"><span class="string">                        &lt;/div&gt;</span></span><br><span class="line"><span class="string">                    &lt;/article&gt;</span></span><br><span class="line"><span class="string">&#123;/foreach&#125;</span></span><br></pre></td></tr></table></figure></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%83%AD%E9%97%A8%E6%96%87%E7%AB%A0/">热门文章</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/undefined/578397b8.html" title="zblog 调用文章第一篇文章和后面其他文章css样式不同时，使用的函数代码"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">zblog 调用文章第一篇文章和后面其他文章css样式不同时，使用的函数代码</div></div><div class="info-2"><div class="info-item-1"> zblog调用列表文章，第一篇文章的样式与后面文章css样式不同12345678910&#123;foreach GetList(5,10) as $key=&gt;$article&#125;&#123;$i=$key&#125;&#123;if $i==0&#125;  &lt;li class=&quot;title-img&quot;&gt;&lt;a href=&quot;&#123;$article.Url&#125;&quot; title=&quot;&#123;$article.Title&#125;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;&#123;$article.Img&#125;&quot; alt=&quot;&#123;$article.Title&#125;&quot;&gt;&lt;/a&gt;    &#123;php&#125;$intro= preg_replace(&#x27;/[\r\n]+/&#x27;, &#x27;&#x27;, trim(SubStrUTF8(...</div></div></div></a><a class="pagination-related" href="/undefined/ada724db.html" title="zblog 首页顶部菜单循环代码"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">zblog 首页顶部菜单循环代码</div></div><div class="info-2"><div class="info-item-1"> 使用 Z-Blog 内置导航模块（推荐）如果后台通过 模块管理 配置了导航（如默认的 navbar 模块），可直接调用以下代码：1234567891011121314&lt;ul id=&quot;top-menu&quot;&gt;  &#123;foreach $navbar as $nav&#125;    &lt;li class=&quot;&#123;if $nav.Level == &#x27;first&#x27;&#125;menu-item&#123;/if&#125;&#123;if $nav.Current&#125; current-menu-item&#123;/if&#125;&quot;&gt;      &lt;a href=&quot;&#123;$nav.Url&#125;&quot; title=&quot;&#123;$nav.Name&#125;&quot;&gt;&#123;$nav.Name&#125;&lt;/a&gt;      &#123;if $nav.SubMenus&#125;        &lt;ul class=...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/undefined/980b8b0e.html" title="WordPress调用按浏览量排序的热门文章，带排序，带class修饰"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-01</div><div class="info-item-2">WordPress调用按浏览量排序的热门文章，带排序，带class修饰</div></div><div class="info-2"><div class="info-item-1"> 背景介绍123456789101112添加序号计数器为前三名添加特殊class移除浏览量显示添加target=”_blank”属性保持原有查询逻辑不变修改后的完整代码如下： 具体代码123456789101112131415161718192021222324&lt;ul&gt;    &lt;?php     $args = array(        &#x27;meta_key&#x27; =&gt; &#x27;views&#x27;,        &#x27;orderby&#x27; =&gt; &#x27;meta_value_num&#x27;,        &#x27;posts_per_page&#x27; =&gt; 8, // 显示8篇文章        &#x27;order&#x27; =&gt; &#x27;DESC&#x27;    );    query_posts($args);    $count = 0; // 初始化计数器    while (have_posts()) : the_post();         $count++;...</div></div></div></a><a class="pagination-related" href="/undefined/3f27fd5a.html" title="wordpress免插件显示文章浏览量次数，WordPress热门文章调用"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-01</div><div class="info-item-2">wordpress免插件显示文章浏览量次数，WordPress热门文章调用</div></div><div class="info-2"><div class="info-item-1"> 首先在网站后台的wordpress模板函数functions.php文件中加入以下的代码：12345678910111213141516171819202122/*显示文章浏览次数*/function getPostViews($postID)&#123;$count = get_post_meta($postID,&#x27;views&#x27;, true);if($count==&#x27;&#x27;)&#123;delete_post_meta($postID,&#x27;views&#x27;);add_post_meta($postID,&#x27;views&#x27;, &#x27;0&#x27;);return &quot;0&quot;;&#125;return $count.&#x27;&#x27;;&#125;function setPostViews($postID) &#123;$count = get_post_meta($postID,&#x27;views&#x27;, true);if($count==&#x27;&#x27;)&#123...</div></div></div></a><a class="pagination-related" href="/undefined/eedbbdc3.html" title="zblog调用指定时间内的热门文章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-30</div><div class="info-item-2">zblog调用指定时间内的热门文章</div></div><div class="info-2"><div class="info-item-1"> 调用指定时间内的热门文章，代码如下：1234567891011&#123;php&#125;  $stime = time();  $ytime = 30*24*60*60;  $ztime = $stime-$ytime;  $order = array(&#x27;log_ViewNums&#x27;=&gt;&#x27;DESC&#x27;);  $where = array(array(&#x27;=&#x27;,&#x27;log_Status&#x27;,&#x27;0&#x27;),array(&#x27;&gt;&#x27;,&#x27;log_PostTime&#x27;,$ztime));  $dayHotArticle = $zbp-&gt;GetArticleList(array(&#x27;*&#x27;),$where,$order,10,&#x27;&#x27;);&#123;/php&#125;&#123;foreach $dayHotArticle as $articles&#125;  &lt;li&gt;&lt;a href=&quot;&...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">风中赏雪</div><div class="author-info-description">喜欢记录一些问题，自己做个备份笔记</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">希望大家多多支持我的博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%A6%E6%9C%89%E5%BA%8F%E5%8F%B7%E7%9A%84%E7%9A%84%E7%83%AD%E9%97%A8%E6%96%87%E7%AB%A0%E5%BE%AA%E7%8E%AF%E6%A0%87%E7%AD%BE%EF%BC%8C-key-gt"><span class="toc-number">1.</span> <span class="toc-text">带有序号的的热门文章循环标签，$key &#x3D;&gt;</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/130f3229.html" title="wordpress 获取上一篇下一篇文章的标题和链接">wordpress 获取上一篇下一篇文章的标题和链接</a><time datetime="2025-11-30T20:50:20.000Z" title="发表于 2025-12-01 04:50:20">2025-12-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/980b8b0e.html" title="WordPress调用按浏览量排序的热门文章，带排序，带class修饰">WordPress调用按浏览量排序的热门文章，带排序，带class修饰</a><time datetime="2025-11-30T20:45:10.000Z" title="发表于 2025-12-01 04:45:10">2025-12-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/4bfdde84.html" title="wordpress主题，文章模板调用当前文章页所属的分类名以及链接">wordpress主题，文章模板调用当前文章页所属的分类名以及链接</a><time datetime="2025-11-30T20:43:12.000Z" title="发表于 2025-12-01 04:43:12">2025-12-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/e36ffa96.html" title="wordpress和zblog搜索功能差异">wordpress和zblog搜索功能差异</a><time datetime="2025-11-30T20:41:01.000Z" title="发表于 2025-12-01 04:41:01">2025-12-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined/9047a15.html" title="wordpress主题首页index.php模板中，调用全站文章函数代码">wordpress主题首页index.php模板中，调用全站文章函数代码</a><time datetime="2025-11-30T20:39:00.000Z" title="发表于 2025-12-01 04:39:00">2025-12-01</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 风中赏雪</span></div><div class="footer_custom_text">欢迎来到我的博客，希望你能喜欢这里的内容！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><div class="js-pjax"></div><script async data-pjax src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.2"></script></div></div><!-- hexo injector body_end start --><script async src="/js/ali_font.js"></script><!-- hexo injector body_end end --></body></html>
